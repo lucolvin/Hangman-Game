@@ -1,0 +1,103 @@
+/* Overall style for the webpage */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+}
+
+/* Main heading style */
+h1 {
+    margin: 20px 0;
+    font-size: 28px;
+    color: #ff6600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for the container holding the Hangman figure */
+.hangman-container {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Hangman figure style */
+.hangman-figure {
+    font-family: 'Courier New', monospace;
+    font-size: 24px;
+    white-space: pre;
+    text-align: center;
+    color: #ff0000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+/* Styling for hiding the Hangman figure elements (letters) */
+.hangman-figure span {
+    display: none;
+}
+
+/* Displayed word or phrase style */
+.word-display {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #008080;
+}
+
+/* Styling for the container holding the letter buttons */
+.letters-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Individual letter button style */
+.letter {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ff6600;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ff6600;
+    background-color: #f7f7f7;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for letter buttons */
+.letter:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    background-color: #ff6600;
+}
+
+/* Active effect for letter buttons */
+.letter:active {
+    transform: scale(0.9);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Add some keyframes animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply animation to the heading */
+h1 {
+    animation: pulse 2s infinite;
+}
