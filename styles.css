@@ -14,26 +14,18 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Styling for the container holding the Hangman figure */
-.hangman-container {
-    margin: 20px auto;
-    max-width: 600px;
-}
-
-/* Hangman figure style */
-.hangman-figure {
-    font-family: 'Courier New', monospace;
-    font-size: 24px;
-    white-space: pre;
-    text-align: center;
-    color: #ff0000;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    margin-bottom: 30px;
-}
-
-/* Styling for hiding the Hangman figure elements (letters) */
-.hangman-figure span {
-    display: none;
+/* Styling for the container holding the log cabin */
+.log-cabin-container {
+    width: 300px;
+    height: 300px;
+    background-image: url('path/to/log_cabin_foundation.jpg'); /* Replace 'path/to/log_cabin_foundation.jpg' with the actual path to your log cabin foundation image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end; /* To align the bottom of the log cabin with the guessed word */
+    padding: 10px;
 }
 
 /* Displayed word or phrase style */
